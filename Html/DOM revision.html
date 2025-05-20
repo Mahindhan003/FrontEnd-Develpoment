@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1>hii its mahi</h1>
+        <p>im a frontend developer</p>
+    </div>
+    <script>
+        /*--------------------------------------------------------| D O M |--------------------------------------------------------------------*/
+
+        //--------------------------------------------------------------------------------------------------------------->
+        //1.Selecting Elements-----  getElementById(),querySelector()-----[element or null]                              |
+        //                           getElementsByClassName(),getElementsByTagName()-----[HTML Collection(live)]         |
+        //                           querySelectorAll()-----[Nodelist(static)]                                           |
+        //                           getElementsByName()-----[Nodelist(static and live)]                                 |
+        //--------------------------------------------------------------------------------------------------------------->
+
+        //--------------------------------------------------------------------------------------------------------------->
+        //2.Traversing Elements----- (i)Parent Traversal, (ii)Child Traversal, (iii)Sibling Traversal.                   |
+        //                                                                                                               |
+        //---------------------------------------------------------------|                                               |
+        //(i)Parent Traversal--(Node)-----  element.parentNode           |                                               |
+        //                   --(Element)-----  element.parentElement     |                                               |
+        //---------------------------------------------------------------|                                               |
+        //                                                                                                               |
+        //-------------------------------------------------------------------------------------------|                   |
+        //(ii)Child Traversal--(NodeList,HTML Collection)----- element.childNodes,element.children   |                   |
+        //                   --(Node)------  element.firstChild,element.lastChild                   |                   |
+        //                   --(Element)-----  element.firstElementChild,element.lastElementChild   |                   |
+        //-------------------------------------------------------------------------------------------|                   |
+        //                                                                                                               |
+        //-----------------------------------------------------------------------------------------------------|         |
+        //(iii)Sibling Traversal--(Node)-----  element.nextSibling,element.previousSibling                    |         |
+        //                      --(Element)-----  element.nextElementSibling,element.previousElementSibling   |         |
+        //-----------------------------------------------------------------------------------------------------|         |
+        //                                                                                                               |
+        //--------------------------------------------------------------------------------------------------------------->
+
+        //--------------------------------------------------------------------------------------------------------------->
+        //3.Manipulating Elements-----  (i)Document Method, (ii)Element Method                                           |
+        //                                                                                                               |
+        //-----------------------------------------------------------------------------------------------------------|   |
+        //(i)Document Method-----  document.createElement(tag),document.createTextNode(text),document.write(html)    |   |
+        //(ii)Element Method--(Properties)-----  element.textContent,element.innerHTML,element.outerHTML             |   |
+        //                  --(Methods)-----  1. parent.append(chd1,chd2,..), 2.parent.appendChild()                 |   |
+        //                             -----  3.parent.removeChild(), 4.parent.prepend(chd1,chd2,..)                 |   |
+        //                             -----  5.parent.replaceChild()                                                |   |
+        //-----------------------------------------------------------------------------------------------------------|   |
+        //--------------------------------------------------------------------------------------------------------------->
+
+        //--------------------------------------------------------------------------------------------------------------->
+        //4.Attribute Methods-----  getAttribute(),setAttribute(),hasAttribute(),removeAttribute()                       |
+        //--------------------------------------------------------------------------------------------------------------->
+
+        //---------------------------------------------------------------------------------------------------------------->
+        //5.Manipulating Elements Style----- (.style,cssText[+=])=>INLINE                                                 |
+        //                             -----  getComputedStyle()=>READ ONLY                                               |
+        //                             -----  className[+=] property                                                      |
+        //                             -----   classList property-- (i).add() (ii).remove() (iii).toggle()                |
+        //                                                       -- (iv).contains (v)replace(old,new)                     |
+        //---------------------------------------------------------------------------------------------------------------->
+
+        //--------------------------------------------------------------------------------------------------------------------->
+        //6.Event Handlers-----  1.Event Types-----  Mouse events,Keyboard events,Form events,Window events,Touch events       |
+        //                       2.Ways to add Event Listener-----  a)Inline Html,b)Html Dom Property c),addEventListeners()   |
+        //                       3.Event Objects                                                                               |
+        //                       4.Event Bubbling and Event Capturing                                                          |
+        //                       5.Event Delegation                                                                            |
+        //                       6.Preventing Default Behavior                                                                 |
+        //                       7.Removing Event Listeners                                                                    |
+        //                       8.Once Only Events                                                                            |
+        //--------------------------------------------------------------------------------------------------------------------->
+
+       /*--Workout--*/
+
+       const header=document.querySelector(".header");
+       const firstChild=header.firstElementChild;
+       firstChild.nextElementSibling.style.color="purple";
+       firstChild.nextElementSibling.style.fontSize="20px";
+
+       firstChild.style.cssText="color:blue; font-size:50px; background-color:black;"
+
+       firstChild.nextElementSibling.style.cssText+="background-color:grey"
+
+       header.className += " footer newclass";
+
+       console.log(header.classList)
+
+        header.classList.add("mine")
+
+        console.log(header.classList)
+
+        header.classList.replace("newclass","oldclass")
+
+        console.log(header.classList)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Revision</title>
+</head>
+<body>
+
+    <!--Workout-->
+
+    <h1 id="header">Hello</h1>
+    <div class="para">
+    <p>this</p>
+    <p>is</p>
+    <p>para</p>
+    </div>
+
+    <script>
+
+            //Need to work with-------------------------------------------------------->
+            //1.maps for...of
+            //2.sets for...of
+            //3. Array.from({ length: 5 }, (_, i) => i + 1);
+            //4.continue and break statements
+            //5.reduce() with objects
+
+       //Converting String-Array & Array-String---------------------------------------->
+       //1.String-Array: string.split('')---->Array  other(Array.from,spread operator,map method)
+       //2.Array-String:array.join('')---->String
+
+       //OPERATORS---------------------------------------------------------------------->
+       //1.Arithmetic Operators----- +,-,*,/,%,**,++,--                                 |
+       //2.Assignment Operators----- =,+=,-=,*=,/=,%=,**=                               |
+       //3.Comparision Operators------ ==,===,!=,!==,<,>,<=,>= (Returns Booleans)       |   
+       //4.Logical Operators----- &&,||,!                                               |
+       //5.Bitwise Operators----- &,|,^,~,<<,>>,>>>                                     |
+       //6.String Equality or Identity Operator ----- ===                               |
+       //7.Conditional or Ternary Operator----- condition? expr1:expr2;(if-else)        |
+       //8.String Operator----- +,``,${}                                                |
+       //9.Type Operator----- typeof,instanceof                                         |
+       //10.Nullish Coalescing Operator------ LHS??RHS => Provides applicable value     |
+       //11.Optional Chaining Operator----- ?. => for objects                           |
+       //12.Comma Operator------ ,                                                      |
+       //------------------------------------------------------------------------------->
+
+       //MATH METHODS-------------------------------------------------------------------->
+       //1.Math Constants----- Math.PI,Math.E                                            |
+       //2.Rounding----- Math.round(),Math.floor(),Math.ceil(),Math.trunc()              |
+       //3.Power & Roots----- Math.pow(x,y),Math.sqrt(),Math.cbrt(),Math.exp()           |
+       //4.Random & Absolute----- Math.random(),Math.abs(),Math.sign()                   |
+       //5.Min & Max-----Math.min(),Math.max()                                           |
+       //6.Logarthmic-----Math.log()                                                     |
+       //7.Trignometry-----Math.sin(),Math.cos(),Math.tan()                              |
+       //-------------------------------------------------------------------------------->
+
+       //Conditional Statements---------------------------------------------------------->
+       //1.if(condtion)----- One simple check                                            |
+       //2.if else----- True or False outcomes                                           |
+       //3.else if----- Multiple choices                                                 |
+       //4.Nested if ----- Condition inside condition                                    |
+       //5.Switch----- Checking one value/variable against many possible exact values    |
+       //6.combining cases----- Group cases with same output                             |
+       //-------------------------------------------------------------------------------->
+
+       //LOOPING STATEMENTS-------------------------------------------------------------->
+       //1.for------ Fixed loops (strings,numbers,arrays,array like objects)             |
+       //2.for...of-----iterates iteratable directly (strings,arrays,array like objects) |
+       //3.for...in-----iterates objects (Properties,indices-array)                      |
+       //4.Nested for loop -2D structures (matrices,table,patterns)                      |
+       //5.while----- Runs until the condition is true                                   |
+       //6.do...while----- First do statement runs and iterates                          |
+       //-------------------------------------------------------------------------------->
+
+       //STRING METHODS------------------------------------------------------------------------>
+       //1.Accessing Strings----- length,charAt(),charCodeAt(),at()                            |
+       //2.Searching Strings----- indexOf(),lastIndexOf(),includes(),startsWith(),endsWith()   |
+       //3.Extracting Strings----- slice()-,substring()->,substr()                             |
+       //4.Manipulating Strings----- toUpperCase(),toLowerCase(),trim(),trimStart(),trimEnd(), |
+       //                        --- replace(),replaceAll(),repeat(),padStart(),padEnd()       |
+       //5.Splitting and Joining----- split(),concat()                                         | 
+       //--------------------------------------------------------------------------------------|           
+       //Converting string to array->  split(''),Array.from()                                  |
+       //--------------------------------------------------------------------------------------> 
+
+        //ARRAY METHODS------------------------------------------------------------------------>
+        //1.Creating and Accessing Array----- [],length()                                      |
+        //2.Adding and Removing elements------ unshift(),push(),shift(),pop()                  |
+        //3.Searching in arrays-----indexOf(),lastIndexOf(),includes()                         |
+        //4.Modifying in arrays----- splice(),slice(),fill(),copyWithin()                      |
+        //5.Combining and Converting----- concat(),join(),toString(),flat()                    |
+        //6.Iterating over arrays-----forEach(),map(),filter(),reduce(),some(),every()         |
+        //7.Sorting and Reversing array----- sort(),reverse()                                  |
+        //8.Creating Arrays-----Array.isArray(),Array.from(),Array.of()                        |
+        //-------------------------------------------------------------------------------------|
+        //Methods returns new array-> slice(),concat(),map(),filter(),flat()                   |
+        //Methods convert array to string-> join(''),toString()                                |
+        //------------------------------------------------------------------------------------->
+
+        //OBJECT METHODS----------------------------------------------------------------------------------->
+        //1.Creating Objects----- Object literal{},new Object()                                            |
+        //2.Accessing, Adding and updating objects----- dot notation(.),bracket notation[""]               |
+        //3.Common Built-in methods----- Object.keys(),Object.values(),Object.entries(),Object.freeze(),   |
+        //                           ---Object.seal(),hasOwnProperty(),Object.assign(),Object.create()     |
+        //4.Custom methods----- Encapsulation(adding data and function inside a object)                    |
+        //LIMITATIONS----- ONLY STRINGS AND [ID] CAN BE USED AS KEYS-(Can be overcomed by MAP)             |
+        //------------------------------------------------------------------------------------------------->
+
+        //FUNCTION AND ITS TYPES------------------------------------------------------------------------------------------>
+        //1.Function Declaration----- Named functions(functions declared with name)                                       |
+        //2.Function Expression----- Variable named functions(function name is stored in a variable)                      |
+        //3.Arrow Function----- One line functions(only with parameter and function name saved as variable)               |
+        //4.Anonymous Functions----- Event Handlers,Callbacks,Array methods,IIFE,Promises,func parameters etc             |
+        //5.IIFE(Immediately Invoked Function Expression)----- (function(){}())-Runs immediately after defined            |
+        //6.Constructor Functions(for creating objects)----- template for objects                                         |
+        //7.Generator function----- it can pause and later resumed const gen=function* name(){yield ""},gen.next)();      |
+        //8.Callback Functions----- Synchronous,Asynchronous                                                              |
+        //9.Function Currying----- Allows partial application of arguments                                                |
+        //10.Closures-----  Function inside functions used for lexical scopes                                             |
+        //---------------------------------------------------------------------------------------------------------------->
+
+       /* //FUNCTION DECLARATION
+        function reverseString(str){
+            const normalizedString=str.toLowerCase().replace(/[^a-z0-9]/gi,'');
+            const reversedString=normalizedString.split('').reverse().join('');
+            return reversedString
+        }
+        console.log(reverseString("giri!!*"));
+
+        //FUNCTION EXPRESSION
+        const isPalindrome=function(str){
+            const normalizedString=str.toLowerCase().replace(/[^a-z0-9]/gi,'');
+            const reversedString=normalizedString.split('').reverse().join('');
+            return (normalizedString==reversedString)? `palindrome:${reversedString}`: "not a palindrome";
+        }
+
+        console.log(isPalindrome("racecar"));
+
+        //ARROW FUNCTION
+
+       const getMax=()=> Math.max(...[5,2,4,5,6,10]) 
+        console.log(getMax());
+
+        //ANONYMOUS FUNCTIONS
+
+        const fname="MAHI";
+        (function(){console.log("I'm a callback function")})();
+
+        setTimeout(()=>console.log(`I run after 5 SECONDS!! ${fname}`),5000)*/
+
+        //IMMEDIATELY INVOKED FUNCTIONS
+
+        (()=>console.log("MORNING"))();
+
+    </script>
+</body>
+</html>
